@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Temporary rule to allow admin user creation
+    match /users/admin {
+      allow write: if true;
+    }
+    
+    // All other operations denied for now
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
