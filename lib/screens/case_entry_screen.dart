@@ -239,7 +239,7 @@ class _CaseEntryScreenState extends State<CaseEntryScreen> {
 
                       // Patient Gender
                       DropdownButtonFormField<Gender>(
-                        initialValue: _selectedGender,
+                        value: _selectedGender,
                         decoration: const InputDecoration(
                           labelText: 'Patient Gender *',
                           prefixIcon: Icon(Icons.wc),

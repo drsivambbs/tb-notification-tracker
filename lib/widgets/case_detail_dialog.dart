@@ -226,7 +226,7 @@ class _CaseDetailDialogState extends State<CaseDetailDialog> {
                   const SizedBox(height: 12),
 
                   DropdownButtonFormField<CaseStatus>(
-                    initialValue: _selectedStatus,
+                    value: _selectedStatus,
                     decoration: InputDecoration(
                       labelText: 'Status',
                       border: const OutlineInputBorder(),
